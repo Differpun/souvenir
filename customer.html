@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ฟอร์มสั่งซื้อสินค้า (ลูกค้า)</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    main {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    body {
+      font-family: 'Tahoma', sans-serif;
+      background-color: #f0f8ff;
+      padding: 20px;
+      line-height: 1.6;
+      font-size: 18px;
+    }
+    h2 {
+      background-color: #2e8b57;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    form {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #246b45;
+    }
+  </style>
+</head>
+<body><main>
+  <h2>แบบฟอร์มสำหรับลูกค้า</h2>
+  <form>
+    <label>ชื่อลูกค้า:</label>
+    <input type="text" placeholder="เช่น นางสาวกุล...">
+
+    <label>ที่อยู่:</label>
+    <textarea placeholder="ระบุที่อยู่สำหรับจัดส่ง"></textarea>
+
+    <label>เบอร์โทรศัพท์:</label>
+    <input type="tel" placeholder="ระบุเบอร์โทรศัพท์">
+
+    <label>เลือกรายการสินค้า:</label>
+    <select>
+      <option>กระเป๋า</option>
+      <option>แก้ว</option>
+      <option>หมวก</option>
+      <option>ร่ม</option>
+      <option>เข็มกลัด</option>
+      <option>สมุด</option>
+      <option>ปากกา</option>
+    </select>
+
+    <label>จำนวน:</label>
+    <input type="number" placeholder="ระบุจำนวนที่ต้องการ">
+
+    <label>อัปโหลดรูปสลิปโอนเงิน:</label>
+    <input type="file" accept="image/*">
+
+    <label>วันที่สั่งซื้อ:</label>
+    <input type="date">
+
+    <label>วิธีการจัดส่ง:</label>
+    <select>
+      <option>จัดส่ง</option>
+      <option>รับเอง</option>
+    </select>
+
+    <label>ช่องทางชำระเงิน:</label>
+    <input type="text" placeholder="เช่น โอนผ่านธนาคาร, พร้อมเพย์ ฯลฯ">
+
+    <button type="submit">ส่งคำสั่งซื้อ</button>
+  </form>
+    <p style="text-align:center; margin-top: 30px;">
+      <a href="admin.html">
+        <button type="button">ไปยังหน้าผู้ดูแลระบบ</button>
+      </a>
+    </p>
+</main></body>
+</html>

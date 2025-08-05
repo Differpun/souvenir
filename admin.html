@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ฟอร์มจัดการสินค้า (Admin)</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    main {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    body {
+      font-family: 'Tahoma', sans-serif;
+      background-color: #f0f8ff;
+      padding: 20px;
+      line-height: 1.6;
+      font-size: 18px;
+    }
+    h2 {
+      background-color: #4682b4;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    form {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #4682b4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #315f7d;
+    }
+  </style>
+</head>
+<body><main>
+  <h2>แบบฟอร์มสำหรับผู้ดูแลระบบ (Admin)</h2>
+  <form>
+    <label>ประเภทสินค้า:</label>
+    <select>
+      <option>กระเป๋า</option>
+      <option>แก้ว</option>
+      <option>หมวก</option>
+      <option>ร่ม</option>
+      <option>เข็มกลัด</option>
+      <option>สมุด</option>
+      <option>ปากกา</option>
+    </select>
+
+    <label>สี:</label>
+    <input type="text" placeholder="ระบุสี">
+
+    <label>ขนาด:</label>
+    <input type="text" placeholder="ระบุขนาด">
+
+    <label>ราคา:</label>
+    <input type="number" placeholder="ระบุราคา (บาท)">
+
+    <label>อัปโหลดรูปภาพ:</label>
+    <input type="file" accept="image/*">
+
+    <button type="submit">บันทึกสินค้า</button>
+  </form>
+    <p style="text-align:center; margin-top: 30px;">
+      <a href="customer.html">
+        <button type="button">ไปยังหน้าลูกค้า</button>
+      </a>
+    </p>
+</main></body>
+</html>
